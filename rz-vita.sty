@@ -31,8 +31,8 @@
 %% Fonts and colours
 %% ------------------------------------------------------------------------
 %% needed for xelatex to work
-\usepackage{fontspec}
-\usepackage{xunicode}
+%\usepackage{fontspec}
+%\usepackage{xunicode}
 
 %% color for the links 
 \usepackage[usenames,dvipsnames]{xcolor}
@@ -44,9 +44,9 @@
 %% Pragmata is available to buy at http://www.fsd.it/fonts/pragma.htm
 %% and is worth every penny. Any good monospace font will work fine, though.
 %% Consolas or inconsolata are good alternatives.
-\setromanfont[Mapping={tex-text},Numbers={OldStyle},Ligatures={Common}]{Minion Pro} 
-\setsansfont[Mapping=tex-text,Colour=ImperialBlue]{Myriad Pro}
-\setmonofont[Mapping=tex-text,Scale=0.9]{Avenir Next Condensed Regular} % Consolas, Pragmata, Lucida Console
+%\setromanfont[Mapping={tex-text},Numbers={OldStyle},Ligatures={Common}]{Lucida Bright} 
+%\setsansfont[Mapping=tex-text,Colour=ImperialBlue]{Lucida Sans}
+%\setmonofont[Mapping=tex-text,Scale=0.9]{Avenir Next Condensed Regular} % Consolas, Pragmata, Lucida Console
 
 %% ------------------------------------------------------------------------
 %% Header and footer
@@ -192,13 +192,15 @@
 %%   Bibliography formatting
 %% ------------------------------------------------------------------------
 
-% \usepackage[uniquename=init,dashed=false,doi=false,isbn=false,backend=biber]{biblatex-chicago}
-\usepackage[notes,natbib,isbn=false,backend=biber,url=false,numbermonth=true]{biblatex-chicago}  
+%\usepackage[uniquename=init,dashed=false,doi=false,isbn=false,backend=biber]{biblatex-chicago}
+%\usepackage[notes,natbib,isbn=false,backend=biber,url=false,numbermonth=true]{biblatex-chicago}  
+
+\usepackage[bibstyle=authoryear,sorting=ydnt,dashed=false]{biblatex}
 
 \DeclareFieldFormat{url}{\url{#1}}
 \DeclareFieldFormat[article]{pages}{#1}
-\DeclareFieldFormat[inproceedings]{pages}{\lowercase{pp.}#1}
-\DeclareFieldFormat[incollection]{pages}{\lowercase{pp.}#1}
+\DeclareFieldFormat[inproceedings]{pages}{\lowercase{pp.}~#1}
+\DeclareFieldFormat[incollection]{pages}{\lowercase{pp.}~#1}
 \DeclareFieldFormat[article]{volume}{\mkbibbold{#1}}
 \DeclareFieldFormat[article]{number}{\mkbibparens{#1}}
 \DeclareFieldFormat[article]{title}{\MakeCapital{#1}}
@@ -229,6 +231,7 @@
 \makebibcategory{subpapers}{Submitted papers}
 \makebibcategory{curpapers}{Current projects}
 \makebibcategory{other}{Reviews, software \& other writing}
+\makebibcategory{abstracts}{Abstracts}
 
 \setlength{\bibitemsep}{2.5pt}
 \setlength{\bibhang}{.8cm}
@@ -246,7 +249,7 @@
 \newenvironment{publications}{\section{Publications}\label{papersstart}}%
 {\label{papersend}\addtocounter{sumpapers}{-1}\refstepcounter{sumpapers}\label{sumpapers}}
 
-\def\printbib#1{\printbibliography[category=#1,heading=#1]\lastref{sumpapers}}
+\def\printbibrz#1#2{\printbibliography[keyword={#1},heading=subbibnumbered,title={#2}]\lastref{sumpapers}}
 \renewcommand{\bibfont}{\normalfont\fontsize{11}{13.4}\rmfamily}
 % Counters for keeping track of papers
 \newcounter{papers}\setcounter{papers}{0}
@@ -283,4 +286,4 @@
 \clubpenalty = 10000
 \widowpenalty = 10000
 \setlist{itemsep=1pt}
-\setdescription{labelwidth=1.2cm,leftmargin=1.5cm,labelindent=1.5cm,font=\rm}
+\setdescription{labelwidth=.9cm,leftmargin=1.5cm,labelindent=0cm,font=\bf}
