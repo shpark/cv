@@ -39,14 +39,12 @@
 \definecolor{ImperialBlue}{rgb}{0.082,0.416,0.608}
 \definecolor{ImperialLightBlue}{rgb}{0.545,0.682,0.8}
 
-%% Choose fonts for use with xelatex
-%% Minion and Myriad are widely available, from Adobe. 
-%% Pragmata is available to buy at http://www.fsd.it/fonts/pragma.htm
-%% and is worth every penny. Any good monospace font will work fine, though.
-%% Consolas or inconsolata are good alternatives.
-%\setromanfont[Mapping={tex-text},Numbers={OldStyle},Ligatures={Common}]{Lucida Bright} 
-%\setsansfont[Mapping=tex-text,Colour=ImperialBlue]{Lucida Sans}
-%\setmonofont[Mapping=tex-text,Scale=0.9]{Avenir Next Condensed Regular} % Consolas, Pragmata, Lucida Console
+%% Use Baskerville
+
+\usepackage[sfdefault]{universalis}
+\usepackage[osf]{Baskervaldx} % oldstyle figures
+\usepackage[bigdelims,baskervaldx]{newtxmath} 
+\usepackage[cal=boondoxo]{mathalfa}
 
 %% ------------------------------------------------------------------------
 %% Header and footer
@@ -100,15 +98,16 @@
 \date{} % not used (revision control instead)
 
 %% hyperlinks
+\hypersetup{colorlinks,
+    allcolors=Blue}
+
 \AtBeginDocument{%
   \def\keywords{\@name, Vita, CV, Resume, \@subject}
-  \hypersetup{xetex, 
-    colorlinks=true,
-    urlcolor=ImperialBlue,
+  \hypersetup{pdftex,
     plainpages=false,
     pdfpagelabels,
     bookmarksnumbered,
-    pdftitle={Vita},
+    pdftitle={Richard Zach: Curriculum Vitae},
     pagebackref,
     pdfauthor={\@name},
     pdfkeywords={\keywords}
@@ -208,6 +207,44 @@
 \DeclareFieldFormat[inproceedings]{title}{#1}
 \DeclareFieldFormat{shorthandwidth}{#1}
 \DeclareFieldFormat{extrayear}{}
+
+% Format & add link to philpapers page
+
+\DeclareFieldFormat{eprint:philpapers}{\textsc{philpapers:} \href{https://philpapers.org/rec/#1}{\footnotesize\texttt{#1}}}
+\DeclareFieldFormat{doi}{\textsc{doi:} 
+\href{https://doi.org/#1}{\footnotesize\texttt{#1}}}
+% Format & add link to Google Scholar citations
+
+% map the bibtex field "google" to usera
+\DeclareSourcemap{
+    \maps[datatype=bibtex]{
+      \map{
+        \step[fieldsource=scholar]
+        \step[fieldset=usera,origfieldval]
+    }
+  }
+}
+
+% print the usera field at end of every entry, if defined
+\AtEveryBibitem{%
+    \csappto{blx@bbx@\thefield{entrytype}}{% put at end of entry
+        \iffieldundef{usera}{}{%
+          \space\printfield{usera}
+        }
+    }
+}
+
+% print a link to the Google Scholar citations list
+\DeclareFieldFormat{usera}{\printscholar{#1}}
+
+% \jobname-scholar should include \defscholar{<cluster ID>}{<citation count>}
+\def\defscholar#1#2{\expandafter\def\csname scholar#1\endcsname{#2}}
+\def\printscholar#1{\ifcsname scholar#1\endcsname%
+  \href{https://scholar.google.com/scholar?cites=\csname scholar#1\endcsname}%
+       {\textsc{\csname scholar#1\endcsname~citations}}\fi}
+
+% include citation counts if available
+\IfFileExists{\jobname-scholar.tex}{\input \jobname-scholar}
 
 % No dot before number of articles
 \usepackage{xpatch}

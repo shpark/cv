@@ -1,13 +1,33 @@
 # Structured data curriculum vitae
 
-Produces my CV in various formats from a `bibtex` bibliography database and a `yaml` file containing non-publication data, using `pandoc` templates.
+Produces my CV in various formats from a `bibtex` bibliography
+database and a `yaml` file containing non-publication data, using
+`pandoc` templates.
 
-This is based on [Benjamin Schmidt's CV-pandoc-healy](https://github.com/bmschmidt/CV-pandoc-healy). See additional info there.
+This is based on [Benjamin Schmidt's
+CV-pandoc-healy](https://github.com/bmschmidt/CV-pandoc-healy). See
+additional info there.
 
 Major changes to bschmidt's setup:
 
 1. Obvs, it's my CV and not his; so there's different sections and organization.
 1. Also generate CV in other formats (eg, MarkDown).
 1. Bibliography is done using `biblatex`, using keywords instead of categories
-   (see `r-vita.sty`).
+   (see `rz-vita.sty`).
+1. Bibliography includes links to [PhilPapers](https://philpapers.org/)
+1. Bibliography also prints number of Google Scholar
+   citations. `zach.bib` contains `scholar` fields that contains the
+   Google Scholar cluster ID corresponding to an entry. The Makefile
+   produces a file `cv-zach-scholar.tex` from this which defines, for
+   each entry that has citations, a macro `\scholar<clusterid>`. It
+   uses a little script `citecounts`, which in turn uses
+   [scholar.py](https://github.com/ckreibich/scholar.py) to query
+   Google Scholar. `rz-vita.sty` loads that file and prints the
+   citations.
 
+`scholar.py` is included as a submodule. After you clone this
+repository, you also have to say
+```
+$ git submodule init
+$ git submodule update
+```

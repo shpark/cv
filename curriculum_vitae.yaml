@@ -1383,15 +1383,18 @@ grants:
   value: CAD 5,940
 -  
   type: Travel Grant, University of Calgary Research Grants Committee,
-  title: International Symposium on Multiple Valued Logic, Singapore, May 2006
+  title: International Symposium on Multiple Valued Logic, Singapore
+  date: 2006
   value: CAD 1,500
 -
   type: Visiting Scholar Grant, University of Calgary Research Grants Committee
-  title: John P. Burgess, Princeton University, September 2004
-  value: CAD 1,300.
+  title: John P. Burgess, Princeton University
+  date: 2004
+  value: CAD 1,300
 -
   type: Visiting Scholar Grant, University of Calgary Research Grants Committee
-  title: William W. Tait, University of Chicago, September 2004
+  title: William W. Tait, University of Chicago
+  date: 2004
   value: CAD 1,150
 -
   type: Standard Research Grant, Social Sciences and Humanities Research Council of Canada (SSHRC)
@@ -1418,7 +1421,8 @@ grants:
   value: CAD 2,000
 -
   type: Visiting Scholar Grant, University of Calgary Research Grants Committee
-  title: Matthias Baaz, Technische Universität Wien, Austria, November 2002
+  title: Matthias Baaz, Technische Universität Wien
+  date: 2002
   value: CAD 1,850
 -
   type: Professional Development Grant, Faculty of Humanities

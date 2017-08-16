@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# citecount
+# returns total citations for Google Scholar cluster IDs
+# uses scholar.py at https://github.com/ckreibich/scholar.py
+
+citations="0"
+for cid in $@ ; do
+    cites=`scholar.py/scholar.py -C $cid | grep '^  *Citations' | sed 's/^[^0-9]*//' | head -1`
+    citations=$[$citations+$cites] 
+done 
+echo $citations

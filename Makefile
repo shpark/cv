@@ -23,6 +23,16 @@ yaml-cv.md: curriculum_vitae.yaml
 # on my own.
 	perl -pi -e 'if ($$_=~/cite\{/) {s/\\_/_/g}; s/(\d{4})-(\.|[Pp]resent|\d{4})/$$1--$$2/g' $@;
 
+%-scholar.tex: FORCE_MAKE
+	rm -f $@
+	for cids in `grep 'scholar' zach.bib|sed 's/^[^0-9]*//;s/[^0-9]*$$//'` ; do \
+		cidss=`echo $$cids | sed 's/,/ /g'` ;\
+		cites=`./citecount $$cidss` ;\
+		sleep 1s ;\
+		if [ "$$cites" -gt "0" ] ; then \
+			echo "\defscholar{$$cids}{$$cites}" >> $@ ;\
+		fi ;\
+	done
 %.md: template-%.md yaml-cv.md
 	pandoc --template=$< -t markdown yaml-cv.md > $@
 
