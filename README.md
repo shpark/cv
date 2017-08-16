@@ -39,4 +39,4 @@ https://scholar.google.ca/scholar?cites=5523213711320200321&as_sdt=2005&sciodt=0
 ```
 The cluster ID is the number after `cites=`. If Google Scholar has
 more than one version for it, put all the cluster IDs in the `scholar`
-field, separated by commas ''but no spaces''.
+field, separated by commas _but no spaces_.
