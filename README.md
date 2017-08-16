@@ -31,3 +31,12 @@ repository, you also have to say
 $ git submodule init
 $ git submodule update
 ```
+
+To get find the Google Scholar cluster ID, click on the "cited by x"
+link for the paper in Google Scholar. It'll take you to an URL like
+```
+https://scholar.google.ca/scholar?cites=5523213711320200321&as_sdt=2005&sciodt=0,5&hl=en
+```
+The cluster ID is the number after `cites=`. If Google Scholar has
+more than one version for it, put all the cluster IDs in the `scholar`
+field, separated by commas ''but no spaces''.
