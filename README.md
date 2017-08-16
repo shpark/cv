@@ -18,10 +18,10 @@ Major changes to bschmidt's setup:
 1. Bibliography also prints number of Google Scholar
    citations. `zach.bib` contains `scholar` fields that contains the
    Google Scholar cluster ID corresponding to an entry. The Makefile
-   produces a file `cv-zach-scholar.tex` from this which defines, for
-   each entry that has citations, a macro `\scholar<clusterid>`. It
-   uses a little script `citecounts`, which in turn uses
-   [scholar.py](https://github.com/ckreibich/scholar.py) to query
+   produces a file `cv-zach-scholar.tex` from this. It issues, for
+   each entry that has citations, a command `\defscholar{<clusterid>}{<citations>}`. 
+   It is generated in the Makefile using a little script `citecounts`, 
+   which in turn uses [scholar.py](https://github.com/ckreibich/scholar.py) to query
    Google Scholar. `rz-vita.sty` loads that file and prints the
    citations.
 
