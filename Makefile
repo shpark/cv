@@ -28,7 +28,6 @@ yaml-cv.md: curriculum_vitae.yaml
 	for cids in `grep 'scholar' zach.bib|sed 's/^[^0-9]*//;s/[^0-9]*$$//'` ; do \
 		cidss=`echo $$cids | sed 's/,/ /g'` ;\
 		cites=`./citecount $$cidss` ;\
-		sleep 1s ;\
 		if [ "$$cites" -gt "0" ] ; then \
 			echo "\defscholar{$$cids}{$$cites}" >> $@ ;\
 		fi ;\

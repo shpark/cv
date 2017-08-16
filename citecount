@@ -6,6 +6,7 @@
 
 citations="0"
 for cid in $@ ; do
+    sleep $[ ( $RANDOM % 5 )  + 1 ]s
     cites=`scholar.py/scholar.py -C $cid | grep '^  *Citations' | sed 's/^[^0-9]*//' | head -1`
     citations=$[$citations+$cites] 
 done 
