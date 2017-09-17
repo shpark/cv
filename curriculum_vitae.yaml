@@ -73,6 +73,52 @@ appointment:
         begindate: 1995-03-01
         enddate: 2000-06-30
 
+editor:
+  -
+    item: Journal for the History of Analytic Philosophy
+    link: https://jhaponline.org/
+    role: Founding Editor
+    begindate: 2010-00-00
+  -
+    item: Open Logic Project
+    link: http://openlogicproject.org/
+    role: Main Instigator
+    begindate: 2013-00-00
+  -
+    item: The Collected Works of Rudolf Carnap
+    link: http://rudolfcarnap.org/
+    role: Editor
+    begindate: 2006-00-00
+  -
+    item: Studia Logica
+    link: http://www.studialogica.org/
+    role: Associate Editor
+    begindate: 2006-00-00
+  -
+    item: Stanford Encyclopedia of Philosophy
+    link: https://plato.stanford.edu/
+    role: Subject Editor, History of Logic
+    begindate: 2005-00-00
+  -
+    item: Hilbert-Bernays Project
+    link: http://wirth.bplaced.net/p/hilbertbernays/
+    role: Advisory Board Member
+    begindate: 2008-00-00
+  -
+    item: Paul Bernays Project
+    link: http://www.phil.cmu.edu/projects/bernays/
+    role: Editorial Board Member
+    begindate: 2000-00-00
+    
+  -
+    item: The Review of Symbolic Logic
+    link: https://www.cambridge.org/core/journals/review-of-symbolic-logic
+    role: Founding Editor
+    begindate: 2007-01-01
+    enddate: 2013-12-31
+ 
+    
+
 education:
   -
     school: University of California, Berkeley
@@ -944,13 +990,13 @@ students:
       date: 2013
     -
       name: Gillman Payette
-      degree: A Study in the Logic of Institutions
-      thesis: PhD
+      degree: PhD
+      thesis: A Study in the Logic of Institutions
       date: 2012
     -
       name: Teresa Kouri
-      degree: Indiscernibility and Mathematical Structuralism
-      thesis: MA
+      degree: MA
+      thesis: Indiscernibility and Mathematical Structuralism
       date: 2010
     -
       name: Taylor Scobbie
@@ -978,91 +1024,83 @@ students:
       thesis: Fuzzy Logic and Vagueness
       date: 2006
 -
-  type: Committee Member
-  students:
-    -
-      name: Chad Mitchell Nester
-      degree: MSc in Computer Science
-      thesis: Turing Categories and Realizability
-      supervisor: Robin Cockett
-      date: 2017
-    -
-      name: Mohammad Jafari
-      degree: PhD in Computer Science
-      thesis: Modelling and Enforcing Purpose in Privacy Policies
-      supervisor: Reyhaneh Safavi-Naini
-      date: 2013
-    -
-      name: Jayalakshmi Balasubramaniam
-      degree: MSc in Computer Science
-      thesis: A Novel Approach to White-Box Policy Analysis
-      supervisor: Philip Fong
-      date: 2013
-    -
-      name: Joseph Windsor
-      degree: MA in Linguistics
-      thesis: "When Nothing Exists: The Role of Zero in the Prosodic Hierarchy"
-      supervisor: Darin Flynn
-      date: 2012
-    -
-      name: Cheng Xu
-      degree: MSc in Computer Science
-      thesis: The Specification and Compilation of Obligation Policies for Program Monitoring
-      supervisor: Philip Fong
-      date:   2011
-    -
-      name: Steven Yuen
-      degree: MSc in Computer Science
-      thesis: Formal Models and Implementations of Distributed Shared Memory
-      supervisor: Lisa Higham
-      date: 2009
-    -
-      name: Jennifer Runke
-      degree: PhD in Philosophy
-      thesis: Towards an Adequate Theory of Scientific Metaphor
-      supervisor: Marc Ereshefsky
-      date: 2008
-    -
-      name: Jillian Hartman
-      degree:  MA in Creative Writing
-      thesis: Scrabbalah
-      supervisor: Susan Rudy, Tom Wayman
-      date: 2005
-    -
-      name: Craig Pastro
-      degree: MSc in Computer Science
-      thesis: $\Sigma\Pi$-Polycategories, Linear Logic, and Process Semantics
-      supervisor: Robin Cockett
-      date: 2005
-    -
-      name: Min Zeng
-      degree: MSc in Computer Science
-      thesis: An Implementation of Charity
-      supervisor: Robin Cockett
-      date: 2003
-    -
-      name: Clement Loo
-      degree: BA Honours
-      thesis: The Role of Evolution in Behavior
-      supervisor: Marc Ereshefsky
-      date: 2003 
--
   type: "External Examiner"
   students:
     -
       name: Hassan Massoud
-      degree: PhD in Philosophy
-      school: University of Alberta
+      degree: PhD in Philosophy, University of Alberta
       thesis: The Epistemology of Natural Deduction
       supervisor: Jeff Pelletier, Allen Hazen
       date: 2015
     -
       name: Toby Meadows
       thesis: Modality without Metaphysics
-      degree: PhD in Philosophy
-      school: University of Melbourne
+      degree: PhD in Philosophy, University of Melbourne
       date: 2011
       supervisor: Greg Restall
+-
+  type: Committee Member
+  students:
+    -
+      name: Chad Mitchell Nester
+      degree: "MSc in Computer Science,       supervisor: Robin Cockett"
+      thesis: Turing Categories and Realizability
+      date: 2017
+    -
+      name: Mohammad Jafari
+      degree: "PhD in Computer Science,       supervisor: Reyhaneh Safavi-Naini"
+      thesis: Modelling and Enforcing Purpose in Privacy Policies
+      date: 2013
+    -
+      name: Jayalakshmi Balasubramaniam
+      degree: "MSc in Computer Science,       supervisor: Philip Fong"
+      thesis: A Novel Approach to White-Box Policy Analysis
+      date: 2013
+    -
+      name: Joseph Windsor
+      degree: "MA in Linguistics, supervisor: Darin Flynn"
+      thesis: "When Nothing Exists: The Role of Zero in the Prosodic Hierarchy"
+      date: 2012
+    -
+      name: Cheng Xu
+      degree: "MSc in Computer Science,       supervisor: Philip Fong"
+      thesis: The Specification and Compilation of Obligation Policies for Program Monitoring
+      date:   2011
+    -
+      name: Julia Zochodne,
+      degree: "BA Honours, supervisor: Nicole Wyatt"
+      thesis: "What do We do with a Logic that is Formal?"
+      date: 2009
+    -
+      name: Steven Yuen
+      degree: "MSc in Computer Science,       supervisor: Lisa Higham"
+      thesis: Formal Models and Implementations of Distributed Shared Memory
+      date: 2009
+    -
+      name: Jennifer Runke
+      degree: "PhD in Philosophy,       supervisor: Marc Ereshefsky"
+      thesis: Towards an Adequate Theory of Scientific Metaphor
+      date: 2008
+    -
+      name: Jillian Hartman
+      degree:  "MA in Creative Writing,       supervisors: Susan Rudy, Tom Wayman"
+      thesis: Scrabbalah
+      date: 2005
+    -
+      name: Craig Pastro
+      degree: "MSc in Computer Science,       supervisor: Robin Cockett"
+      thesis: $\Sigma\Pi$-Polycategories, Linear Logic, and Process Semantics
+      date: 2005
+    -
+      name: Min Zeng
+      degree: "MSc in Computer Science,       supervisor: Robin Cockett"
+      thesis: An Implementation of Charity
+      date: 2003
+    -
+      name: Clement Loo
+      degree: "BA Honours, supervisor: Marc Ereshefsky"
+      thesis: The Role of Evolution in Behavior
+      date: 2003 
 
 service:
 -

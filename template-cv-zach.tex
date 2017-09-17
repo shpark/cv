@@ -68,6 +68,12 @@ $endfor$
 $endfor$
 
 
+\section{Editor}
+
+$for(editor)$
+\ind \textit{$editor.item$}, $editor.role$. $if(editor.enddate)$\daterange{$editor.begindate$}{$editor.enddate$}$else$\printdate{$editor.begindate$}--$endif$.
+
+$endfor$
 
 \defbibheading{publist}[\bibname]{%
   \subsection{#1}}
@@ -137,10 +143,22 @@ $endfor$
 
 \section{Teaching}
 
+\subsection{Classes Taught}
+
 $for(teaching)$
 \subsection{$teaching.school$}
 $for(teaching.courses)$
 \ind $teaching.courses.title$ ($teaching.courses.number$), $teaching.courses.date$. ($teaching.courses.type$).
+
+$endfor$
+$endfor$
+
+\section{Students}
+
+$for(students)$
+\subsection{$students.type$}
+$for(students.students)$
+\ind $students.students.name$ ($students.students.degree$), $students.students.thesis$, $students.students.date$.
 
 $endfor$
 $endfor$

@@ -16,7 +16,7 @@
 \usepackage[centering]{geometry}
 \usepackage{fontawesome}
 \usepackage[compact,small,sf,bf]{titlesec}
-
+\usepackage{etaremune}
 %% ------------------------------------------------------------------------  
 %%  Git version tracking 
 %% ------------------------------------------------------------------------
@@ -282,13 +282,14 @@
 \setlength{\bibhang}{.8cm}
 %\renewcommand{\bibfont}{\fontsize{12}{14}}
 
-\renewcommand*{\bibitem}{\addtocounter{papers}{1}\item \mbox{}\hskip-0.85cm\hbox to 0.85cm{\hfill\arabic{papers}.~~}}
+%\renewcommand*{\bibitem}{\addtocounter{papers}{1}\item \mbox{}\hskip-0.85cm\hbox to 0.85cm{\hfill\arabic{papers}.~~}}
+\renewcommand*{\bibitem}{\addtocounter{papers}{1}\item}
 \defbibenvironment{bibliography}
-{\list{}
+{\begin{etaremune}%\list{}
   {\setlength{\leftmargin}{\bibhang}%
    \setlength{\itemsep}{\bibitemsep}%
    \setlength{\parsep}{\bibparsep}}}
-{\endlist}
+{\end{etaremune}}
 {\bibitem}
 
 \newenvironment{publications}{\section{Publications}\label{papersstart}}%
