@@ -71,7 +71,7 @@ $endfor$
 \section{Editor}
 
 $for(editor)$
-\ind \textit{$editor.item$}, $editor.role$. $if(editor.enddate)$\daterange{$editor.begindate$}{$editor.enddate$}$else$\printdate{$editor.begindate$}--$endif$.
+\ind \textit{\href{$editor.link$}{$editor.item$}}, $editor.role$. $if(editor.enddate)$\daterange{$editor.begindate$}{$editor.enddate$}$else$\printdate{$editor.begindate$}--$endif$.
 
 $endfor$
 
