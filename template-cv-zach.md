@@ -11,6 +11,9 @@ $endfor$
 | EMail: [$email$](mailto:$email$)
 | Phone: $tel$
 | Twitter: [$twitter$](http://twitter.com/$twitter$)
+| [Google Scholar](https://scholar.google.ca/citations?user=$scholar$&hl=en&oi=ao)
+| [Philpapers](https://philpapers.org/profile/$philpapers$)
+| ORCID: [$orcid$](http://orcid.org/$orcid$)
 
 ## Appointments
 

@@ -87,6 +87,10 @@
 \def\email#1{\def\@email{#1}}
 \def\twitter#1{\def\@twitter{#1}}
 \def\tel#1{\def\@tel{#1}}
+\def\orcid#1{\def\@orcid{#1}}
+\def\philpapers#1{\def\@philpapers{#1}}
+\def\github#1{\def\@github{#1}}
+\def\googlescholar#1{\def\@googlescholar{#1}}
 \def\postnoms#1{\def\@postnoms{#1}}
 \def\address#1{\def\@address{#1}}
 \def\subject#1{\def\@subject{#1}}
@@ -130,7 +134,11 @@
     {\scriptsize \texttt{\@tel \, \faPhone} } \\
     {\scriptsize  \texttt{\href{mailto:\@email}{\@email}} \, \faEnvelope} \\
     {\scriptsize  \texttt{\href{http://\@www}{\@www}} \, \faGlobe} \\
-    {\scriptsize  \texttt{\href{http://twitter.com/\@twitter}{\@twitter} \, \faTwitter}}
+    {\scriptsize  \texttt{\href{https://github.com/\@github}{\@github}} \, \faGithub} \\
+    {\scriptsize  \texttt{\href{https://twitter.com/\@twitter}{\@twitter} \, \faTwitter}} \\
+    {\scriptsize  \textsc{\href{https://scholar.google.ca/citations?user=\@googlescholar&hl=en}{Google Scholar}} \, \faGoogle} \\
+    {\scriptsize  \textsc{\href{https://philpapers.org/profile/\@philpapers}{PhilPapers}} \, \faFileText} \\
+    
   \end{minipage}
 
   \bigskip
@@ -194,7 +202,7 @@
 %\usepackage[uniquename=init,dashed=false,doi=false,isbn=false,backend=biber]{biblatex-chicago}
 %\usepackage[notes,natbib,isbn=false,backend=biber,url=false,numbermonth=true]{biblatex-chicago}  
 
-\usepackage[bibstyle=authoryear,sorting=ydnt,dashed=false]{biblatex}
+\usepackage[bibstyle=authoryear,sorting=ydnt,dashed=false,maxbibnames=99]{biblatex}
 
 \DeclareFieldFormat{url}{\url{#1}}
 \DeclareFieldFormat[article]{pages}{#1}
@@ -240,7 +248,7 @@
 % \jobname-scholar should include \defscholar{<cluster ID>}{<citation count>}
 \def\defscholar#1#2{\expandafter\def\csname scholar#1\endcsname{#2}}
 \def\printscholar#1{\ifcsname scholar#1\endcsname%
-  \href{https://scholar.google.com/scholar?cites=\csname scholar#1\endcsname}%
+  \href{https://scholar.google.com/scholar?cites=#1}%
        {\textsc{\csname scholar#1\endcsname~citations}}\fi}
 
 % include citation counts if available
