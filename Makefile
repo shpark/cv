@@ -1,6 +1,6 @@
 .PHONY: FORCE_MAKE
 
-all: cv-zach.pdf 
+all: cv-zach.pdf
 
 #pdf:   clean $(PDFS)
 #html:  clean $(HTML)
@@ -33,7 +33,10 @@ yaml-cv.md: curriculum_vitae.yaml
 		fi ;\
 	done
 %.md: template-%.md yaml-cv.md
-	pandoc --template=$< -t markdown yaml-cv.md > $@
+	sed 's/-[0-9][0-9]-[0-9][0-9]//g;s/\\\\emph{\([^}]*\)}/_\1_/g;' yaml-cv.md | pandoc --template=$< -t markdown | sed 's/--/–/g' > $@
+
+%.html: %.md
+	pandoc -f markdown -t html $< > $@
 
 clean:
 	rm -f *.aux *.bcf *.log *.out *.run.xml *.pdf *.bbl *.blg *yaml-cv.md

@@ -705,7 +705,7 @@ presentation:
   conference: true
 -
   title: 'Completeness before Post: Hilbert and Bernays on Propositional Logic, 1917--18'
-  host:  Stanford University
+  place:  Stanford University
   host: Logic Lunch 
   date: 1999-02-12
   invited: true
@@ -746,7 +746,7 @@ presentation:
   date: 1996-08-00
   workshop: true
 -
-  title: A Software Package for aAiomatizing Finite-Valued First-Order Logics
+  title: A Software Package for Axiomatizing Finite-Valued First-Order Logics
   host:  Seventh European Summer School in Language, Logic, and Information
   place:  Barcelona
   date: 1995-08-00
@@ -963,6 +963,67 @@ teaching:
     number: Phil 567/667
     date: Winter 2005
     type: grad
+-
+  school: McGill University
+  courses:
+  -
+    title: Intermediate Logic
+    number: Phil 310
+    date: Winter 2015
+    type: undergrad
+-
+  school: Stanford University
+  courses:
+  -
+    title: "Logic, Reasoning, and Argumentation"
+    number: Phil 57
+    date: Spring 2001
+    type: undergrad
+  -
+    title: Early Analytic Philosophy
+    number: Phil 124/224
+    date: Spring 2001
+    type: grad
+  -
+    title: Philosophy of Logic
+    number: Phil 158/258
+    date: Winter 2001
+    type: grad
+-
+  school: University of California, Berkeley
+  courses:
+  -
+    title: Introduction to Logic
+    number: Phil 12A
+    date: Summer 1998
+    type: undergrad
+-
+  school: Technische Universität Wien, Vienna
+  courses:
+  - 
+    title: Epsilon Calculus
+    date: Summer 2009
+    type: grad
+  -
+    title: Intuitionistic Logic
+    date: Summer 2000
+    type: grad
+  -
+    title: Theories of Truth
+    date: Summer 1999
+    type: grad
+  -
+    title: Logics of Knowledge and Belief
+    date: Summer 1998
+    type: grad
+  -
+    title: Computability and Models of Arithmetic
+    date: Summer 1997
+    type: grad
+  -
+    title: Proof Theory for Computer Scientists
+    date: Summer 1995
+    type: grad
 
 students:
 -
@@ -1067,7 +1128,7 @@ students:
       thesis: The Specification and Compilation of Obligation Policies for Program Monitoring
       date:   2011
     -
-      name: Julia Zochodne,
+      name: Julia Zochodne
       degree: "BA Honours, supervisor: Nicole Wyatt"
       thesis: "What do We do with a Logic that is Formal?"
       date: 2009
@@ -1377,7 +1438,7 @@ grants:
   title: The Open Logic Project
   date: 2015--2016
   value: CAD 7,500
-  note: "Co-aplicant: Nicole Wyatt"
+  note: "Co-applicant: Nicole Wyatt"
 -
   type: Alberta Open Educational Resources Intitiative
   title: The Open Logic Project
@@ -1456,7 +1517,7 @@ grants:
 -
   type: Travel Grant, University of Calgary Research Grants Committee
   title: International Symposium on Multiple Valued Logic, Tokyo, May 2003
-  value: CAD1,50.
+  value: CAD 1,500
 -
   type: Professional Development Grant, Faculty of Humanities
   date: 2003
