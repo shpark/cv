@@ -8,6 +8,8 @@ This is based on [Benjamin Schmidt's
 CV-pandoc-healy](https://github.com/bmschmidt/CV-pandoc-healy). See
 additional info there.
 
+The resulting PDF can be viewed [here](http://phil.ucalgary.ca/profiles/215-28369/richard-zach-cv.pdf).
+
 Major changes to bschmidt's setup:
 
 1. Obvs, it's my CV and not his; so there's different sections and organization.
