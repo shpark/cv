@@ -26,8 +26,10 @@ yaml-cv.md: curriculum_vitae.yaml
 %-scholar.tex: FORCE_MAKE
 	rm -f $@
 	for cids in `grep 'scholar' zach.bib|sed 's/^[^0-9]*//;s/[^0-9]*$$//'` ; do \
+	 	sleep 10m ;\ # query every 10 mins so we don't get blocked
 		cidss=`echo $$cids | sed 's/,/ /g'` ;\
 		cites=`./citecount $$cidss` ;\
+		echo "$$cites citations for $$cidss" ;\
 		if [ "$$cites" -gt "0" ] ; then \
 			echo "\defscholar{$$cids}{$$cites}" >> $@ ;\
 		fi ;\

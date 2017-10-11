@@ -1225,11 +1225,13 @@ service:
   type: "University of Calgary"
   gigs:
     -
+      item: Faculty of Arts, Faculty Merit Committee, 2017
+    -
       item: Faculty of Graduate Studies, Awards Oversight Committee
-      date:  2016--
+      date:  2016-
     -
       item: "Faculty of Arts, Tenure and Promotion Committee, Dean's Appointee"
-      date: 2016-2017
+      date: 2016
     -
       item: Pacific Institute for the Mathematical Sciences, Calgary Site Steering Committee
       date: 2016-
