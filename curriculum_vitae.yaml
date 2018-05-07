@@ -141,7 +141,7 @@ education:
     degree: Diplom-Ingenieur
     field: Computational Logic
     date: 1993-11-01
-    info: "Thesis: \"Proof Theory of Finite-Valued Logics.\" Supervisor: Matthias Baaz"
+
 
 competencies: 
   -
@@ -189,6 +189,12 @@ awards:
 
 presentation:
 
+-
+  title: The Origins of Modern First-order Logic
+  place: Carnegie Mellon University
+  host: Philosophy Colloquium 
+  date: 2017-11-16
+  invited: true
 -
   title: The Open Logic Project
   place: Seattle
@@ -894,14 +900,19 @@ teaching:
   school: University of Calgary
   courses:
   -
-    title: "Logic III: Gödel's Incompleteness Theorems"
-    number: Phil 479/679
-    date: Winter 2004, Winter 2007, Fall 2008, Winter 2010, Winter 2012, Fall 2017
+    title: "Advanced Topics in Logic: Modal Logic"
+    number: Phil 579.02/679.02
+    date: Winter 2014, Winter 2018
     type: grad
   -
     title: Proseminar
     number: Phil 603
-    date: Fall 2015, Fall 2016
+    date: Fall 2015, Fall 2016, Fall 2017
+    type: grad
+  -
+    title: "Logic III: Gödel's Incompleteness Theorems"
+    number: Phil 479/679.01
+    date: Winter 2004, Winter 2007, Fall 2008, Winter 2010, Winter 2012, Winter 2017
     type: grad
   -
     title: Logic II
@@ -920,7 +931,7 @@ teaching:
     type: grad
   -
     title: Modal Logic
-    number: Phil 513/679
+    number: Phil 513/679.05
     date: Winter 2003, Fall 2005, Fall 2007, Winter 2013
     type: grad
   -
@@ -1030,6 +1041,16 @@ students:
   type: Supervisor
   students:
     -
+      name: Samara Burns
+      degree: MA
+      thesis: Hypersequent Calculi for Modal Logics
+      date: 2018
+    -
+      name: Teppei Hayashi
+      degree: PhD
+      thesis: "The Continuum: History, Mathematics, and Philosophy"
+      date: 2017
+    -
       name: Zahra Ahmadianhosseini
       degree: MA
       thesis: Logical Models of Fallible Knowledge
@@ -1088,6 +1109,12 @@ students:
   type: "External Examiner"
   students:
     -
+      name: Long Chen
+      degree: PhD in Philosophy, King's College London
+      thesis: "Interpreting Gödel: Historical and Philosophical Perspectives"
+      supervisor: Michael Beaney
+      date: 2017
+    -
       name: Hassan Massoud
       degree: PhD in Philosophy, University of Alberta
       thesis: The Epistemology of Natural Deduction
@@ -1103,18 +1130,23 @@ students:
   type: Committee Member
   students:
     -
+      name: Prashant Kumar
+      degree: "MSc in Computer Science, supervisor: Robin Cockett"
+      thesis: Implementation of Message Passing Language
+      date: 2018
+    -
       name: Chad Mitchell Nester
-      degree: "MSc in Computer Science,       supervisor: Robin Cockett"
+      degree: "MSc in Computer Science, supervisor: Robin Cockett"
       thesis: Turing Categories and Realizability
       date: 2017
     -
       name: Mohammad Jafari
-      degree: "PhD in Computer Science,       supervisor: Reyhaneh Safavi-Naini"
+      degree: "PhD in Computer Science, supervisor: Reyhaneh Safavi-Naini"
       thesis: Modelling and Enforcing Purpose in Privacy Policies
       date: 2013
     -
       name: Jayalakshmi Balasubramaniam
-      degree: "MSc in Computer Science,       supervisor: Philip Fong"
+      degree: "MSc in Computer Science, supervisor: Philip Fong"
       thesis: A Novel Approach to White-Box Policy Analysis
       date: 2013
     -
@@ -1124,7 +1156,7 @@ students:
       date: 2012
     -
       name: Cheng Xu
-      degree: "MSc in Computer Science,       supervisor: Philip Fong"
+      degree: "MSc in Computer Science, supervisor: Philip Fong"
       thesis: The Specification and Compilation of Obligation Policies for Program Monitoring
       date:   2011
     -
@@ -1134,27 +1166,27 @@ students:
       date: 2009
     -
       name: Steven Yuen
-      degree: "MSc in Computer Science,       supervisor: Lisa Higham"
+      degree: "MSc in Computer Science, supervisor: Lisa Higham"
       thesis: Formal Models and Implementations of Distributed Shared Memory
       date: 2009
     -
       name: Jennifer Runke
-      degree: "PhD in Philosophy,       supervisor: Marc Ereshefsky"
+      degree: "PhD in Philosophy, supervisor: Marc Ereshefsky"
       thesis: Towards an Adequate Theory of Scientific Metaphor
       date: 2008
     -
       name: Jillian Hartman
-      degree:  "MA in Creative Writing,       supervisors: Susan Rudy, Tom Wayman"
+      degree:  "MA in Creative Writing, supervisors: Susan Rudy, Tom Wayman"
       thesis: Scrabbalah
       date: 2005
     -
       name: Craig Pastro
-      degree: "MSc in Computer Science,       supervisor: Robin Cockett"
+      degree: "MSc in Computer Science, supervisor: Robin Cockett"
       thesis: $\Sigma\Pi$-Polycategories, Linear Logic, and Process Semantics
       date: 2005
     -
       name: Min Zeng
-      degree: "MSc in Computer Science,       supervisor: Robin Cockett"
+      degree: "MSc in Computer Science, supervisor: Robin Cockett"
       thesis: An Implementation of Charity
       date: 2003
     -
@@ -1172,12 +1204,15 @@ service:
       date: 2015-
     -
       item: Committee on Diversity and Climate, Member
-      date: 2015--
+      date: 2015-
     -
       item: Head's Advisory Committee, Member
-      date: 2013--2014, 2015--
+      date: 2013--2014, 2015-
     -
-      item: Graduate Studies Committee, Member
+      item: Graduate Program Committee, Chair
+      date: 2015--2018
+    -
+      item: Graduate Program Committee, Member
       date: 2002--2004, 2005--2006, 2009--2013
     -
       item: Hiring Committee (Logic and Philosophy of Science), Member
@@ -1217,7 +1252,7 @@ service:
       date: 2004
     -
       item: Ad Hoc Committee on History and Philosophy of Science Undergraduate Programs, Chair
-      date: 2002--2003 
+      date: 2002-2003 
     -
       item: Ad Hoc Committee on Department Self-Assessment Exercise, Member
       date: 2002
@@ -1225,10 +1260,14 @@ service:
   type: "University of Calgary"
   gigs:
     -
-      item: Faculty of Arts, Faculty Merit Committee, 2017
+      item: Faculty of Arts, Graduate Academic Review Committee, Vice Chair
+      date: 2015--2018
+    -
+      item: Faculty of Arts, Faculty Merit Committee
+      date: 2017
     -
       item: Faculty of Graduate Studies, Awards Oversight Committee
-      date:  2016-
+      date: 2016-2018
     -
       item: "Faculty of Arts, Tenure and Promotion Committee, Dean's Appointee"
       date: 2016
@@ -1246,7 +1285,7 @@ service:
       date: 2015--
     -
       item: Calgary Institute for the Humanities, Executive Council
-      date: 2016-2018
+      date: 2016--2018
     -
       item: Institute for Quantum Science and Technology, Council
       date: 2010-
@@ -1341,6 +1380,9 @@ service:
   type: Conferences
   gigs:
     -
+      item: Second-Order Quantifier Elimination SOQE 2017, ESSLLI, Program Committee Member
+      date: 2017
+    -
       item: Quantifiers and Determiners QUAD 2017, ESSLLI, Program Committee Member
       date: 2017
     -
@@ -1420,9 +1462,9 @@ service:
 - type: Reviewer
   gigs:
     -
-      item: "Presses: Blackwell, Cambridge University Press, Oxford University Press, Princeton University Press"
+      item: "Presses: Blackwell, Cambridge University Press, Oxford University Press, Princeton University Press, Springer"
     -
-      item: "Journals: \\emph{Archive for  Mathematical Logic}, \\emph{American Philosophical Quarterly}, \\emph{Bulletin of Symbolic Logic}, \\emph{Dialectica}, \\emph{Ergo}, \\emph{Erkenntnis}, \\emph{European Journal for Philosophy of Science}, \\emph{Historia Mathematica}, \\emph{History and Philosophy of Logic}, \\emph{Journal of Philosophical Logic}, \\emph{Journal of Symbolic Logic}, \\emph{Journal of Applied Non-Classical Logics}, \\emph{Journal of Logic and Computation}, \\emph{Journal of Logic,   Language, and Information}, \\emph{Logic Journal of the IGPL}, \\emph{Journal for the History of Analytic Philosophy}, \\emph{Mathematical Logic Quarterly}, \\emph{Mind}, \\emph{Notre Dame Journal of Formal Logic}, \\emph{Philosopher's Imprint}, \\emph{Philosophia Mathematica}, \\emph{Review of Symbolic Logic}, \\emph{Studia Logica}, \\emph{Studies in History and Philosophy of   Science}, \\emph{Synthese}, \\emph{Theoretical Computer Science}"
+      item: "Journals: \\emph{Archive for  Mathematical Logic}, \\emph{American Philosophical Quarterly}, \\emph{Bulletin of Symbolic Logic}, \\emph{Dialectica}, \\emph{Ergo}, \\emph{Erkenntnis}, \\emph{European Journal for Philosophy of Science}, \\emph{Historia Mathematica}, \\emph{History and Philosophy of Logic}, \\emph{Journal of Philosophical Logic}, \\emph{Journal of Symbolic Logic}, \\emph{Journal of Applied Non-Classical Logics}, \\emph{Journal of Logic and Computation}, \\emph{Journal of Logic, Language, and Information}, \\emph{Logic Journal of the IGPL}, \\emph{Logic and Logical Philosophy}, \\emph{Journal for the History of Analytic Philosophy}, \\emph{Mathematical Logic Quarterly}, \\emph{Mind}, \\emph{Notre Dame Journal of Formal Logic}, \\emph{Philosopher's Imprint}, \\emph{Philosophia Mathematica}, \\emph{Review of Symbolic Logic}, \\emph{Studia Logica}, \\emph{Studies in History and Philosophy of Science}, \\emph{Synthese}, \\emph{Theoretical Computer Science}"
     -
       item: "Conferences: Canadian Philosophical Association 2003, 2006, 2008, 2017; Workshops on Computer Science Logic 1994, 1995, 2002, 2017;Western Canadian Philosophy Association 2002, 2004, 2016;  Computability in Europe 2008; Logic for Programming and Automated Reasoning 1992, 2005, 2007; World Congress on Universal Logic 2005; Society for Exact Philosophy 2005; International Joint Conference on Automated Reasoning 2004; International Symposia on Multiple Valued Logic 1994, 1998; Kurt Gödel Colloquia 1993, 1997; International Conference on Automated Deduction 1994, 2004; European Conference on Artificial Intelligence 1994; Workshop on Tableau-based Deduction, 1993"
     -

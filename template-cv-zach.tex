@@ -148,7 +148,7 @@ $endfor$
 $for(teaching)$
 \subsection{$teaching.school$}
 $for(teaching.courses)$
-\ind $teaching.courses.title$ ($teaching.courses.number$), $teaching.courses.date$. ($teaching.courses.type$).
+\ind $teaching.courses.title$$if(teaching.courses.number)$ ($teaching.courses.number$)$endif$, $teaching.courses.date$. ($teaching.courses.type$).
 
 $endfor$
 $endfor$
