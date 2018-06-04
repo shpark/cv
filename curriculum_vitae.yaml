@@ -905,7 +905,7 @@ teaching:
     date: Winter 2014, Winter 2018
     type: grad
   -
-    title: Proseminar
+    title: Graduate Proseminar
     number: Phil 603
     date: Fall 2015, Fall 2016, Fall 2017
     type: grad
@@ -1201,37 +1201,37 @@ service:
   gigs:
     -
       item: Graduate Program Director
-      date: 2015-
+      date: 2015-2018
     -
       item: Committee on Diversity and Climate, Member
-      date: 2015-
+      date: 2015-2018
     -
       item: Head's Advisory Committee, Member
-      date: 2013--2014, 2015-
+      date: 2013-2014, 2015-2018
     -
       item: Graduate Program Committee, Chair
-      date: 2015--2018
+      date: 2015-2018
+    -
+      item: Field of Study Exam Standing Committee (Logic and Language), Member
+      date: 2015-2018
+    -
+      item: Preliminary Exam Standing Committee (Logic and Language), Chair
+      date: 2003-2004, 2008-2014
     -
       item: Graduate Program Committee, Member
-      date: 2002--2004, 2005--2006, 2009--2013
+      date: 2002-2004, 2005-2006, 2009-2013
     -
       item: Hiring Committee (Logic and Philosophy of Science), Member
       date: 2012
     -
       item: Speaker's Committe, Chair
-      date: 2008--2011
+      date: 2008-2011
     -
       item: Hiring Committee (Logic and Philosophy of Science Postdoc), Member
       date: 2010
     -
       item: Speaker's Committee, Member
       date: 2005
-    -
-      item: Preliminary Exam Standing Committee (Logic and Language), Chair
-      date: 2003--2004, 2008--2014
-    -
-      item: Field of Study Exam Standing Committee (Logic and Language), Member
-      date: 2015--
     -
       item: Hiring Committee (Logic), Member
       date: 2005--2006
@@ -1379,6 +1379,8 @@ service:
 -
   type: Conferences
   gigs:
+    - item: Western Canadian Philosophical Association, Organizer
+      date: 2018
     -
       item: Second-Order Quantifier Elimination SOQE 2017, ESSLLI, Program Committee Member
       date: 2017
@@ -1464,9 +1466,9 @@ service:
     -
       item: "Presses: Blackwell, Cambridge University Press, Oxford University Press, Princeton University Press, Springer"
     -
-      item: "Journals: \\emph{Archive for  Mathematical Logic}, \\emph{American Philosophical Quarterly}, \\emph{Bulletin of Symbolic Logic}, \\emph{Dialectica}, \\emph{Ergo}, \\emph{Erkenntnis}, \\emph{European Journal for Philosophy of Science}, \\emph{Historia Mathematica}, \\emph{History and Philosophy of Logic}, \\emph{Journal of Philosophical Logic}, \\emph{Journal of Symbolic Logic}, \\emph{Journal of Applied Non-Classical Logics}, \\emph{Journal of Logic and Computation}, \\emph{Journal of Logic, Language, and Information}, \\emph{Logic Journal of the IGPL}, \\emph{Logic and Logical Philosophy}, \\emph{Journal for the History of Analytic Philosophy}, \\emph{Mathematical Logic Quarterly}, \\emph{Mind}, \\emph{Notre Dame Journal of Formal Logic}, \\emph{Philosopher's Imprint}, \\emph{Philosophia Mathematica}, \\emph{Review of Symbolic Logic}, \\emph{Studia Logica}, \\emph{Studies in History and Philosophy of Science}, \\emph{Synthese}, \\emph{Theoretical Computer Science}"
+      item: "Journals: \\emph{Archive for  Mathematical Logic}, \\emph{American Philosophical Quarterly}, \\emph{Bulletin of Symbolic Logic}, \\emph{Dialectica}, \\emph{Ergo}, \\emph{Erkenntnis}, \\emph{European Journal for Philosophy of Science}, \\emph{Historia Mathematica}, \\emph{History and Philosophy of Logic}, \\emph{Journal of Philosophical Logic}, \\emph{Journal of Symbolic Logic}, \\emph{Journal of Applied Non-Classical Logics}, \\emph{Journal of Logic and Computation}, \\emph{Journal of Logic, Language, and Information}, \\emph{Logic Journal of the IGPL}, \\emph{Logic and Logical Philosophy}, \\emph{Journal for the History of Analytic Philosophy}, \\emph{Mathematical Logic Quarterly}, \\emph{Mind}, \\emph{Notre Dame Journal of Formal Logic}, \\emph{Philosopher's Imprint}, \\emph{Philosophia Mathematica}, \\emph{Philosophical Transactions of the Royal Society A}, \\emph{Review of Symbolic Logic}, \\emph{Studia Logica}, \\emph{Studies in History and Philosophy of Science}, \\emph{Synthese}, \\emph{Theoretical Computer Science}"
     -
-      item: "Conferences: Canadian Philosophical Association 2003, 2006, 2008, 2017; Workshops on Computer Science Logic 1994, 1995, 2002, 2017;Western Canadian Philosophy Association 2002, 2004, 2016;  Computability in Europe 2008; Logic for Programming and Automated Reasoning 1992, 2005, 2007; World Congress on Universal Logic 2005; Society for Exact Philosophy 2005; International Joint Conference on Automated Reasoning 2004; International Symposia on Multiple Valued Logic 1994, 1998; Kurt Gödel Colloquia 1993, 1997; International Conference on Automated Deduction 1994, 2004; European Conference on Artificial Intelligence 1994; Workshop on Tableau-based Deduction, 1993"
+      item: "Conferences: Canadian Philosophical Association 2003, 2006, 2008, 2017; Workshops on Computer Science Logic 1994, 1995, 2002, 2017; Western Canadian Philosophy Association 2002, 2004, 2016;  Computability in Europe 2008; Logic for Programming and Automated Reasoning 1992, 2005, 2007; World Congress on Universal Logic 2005; Society for Exact Philosophy 2005; International Joint Conference on Automated Reasoning 2004; International Symposia on Multiple Valued Logic 1994, 1998; Kurt Gödel Colloquia 1993, 1997; International Conference on Automated Deduction 1994, 2004; European Conference on Artificial Intelligence 1994; Workshop on Tableau-based Deduction, 1993"
     -
       item: "Granting Agencies: Austrian Science Fund, Fonds Québéquois de Recherche sur la Société et Culture, Natural Sciences and Engineering Research Council of Canada NSERC, Research Foundation Flanders, Social Sciences and Humanities Research Council of Canada SSHRC, Deutsche Forschungsgemeinschaft, Canada Council for the Arts, Nederlands Organization for Scientific Research"
 
