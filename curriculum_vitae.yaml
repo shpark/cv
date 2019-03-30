@@ -188,7 +188,24 @@ awards:
   date: 1994-1995
 
 presentation:
-
+-
+  title: The Significance of the Curry-Howard Isomorphism
+  host: Eastern Division Meeting of the American Philosophical Association
+  place: New York
+  date: 2019-01-08
+  keynote: true
+-
+  title: The Philosophical Significance of the Curry-Howard Isomorphism
+  host: 41st International Wittgenstein Symposium
+  place: Kirchberg am Wechsel, Austria
+  date: 2018-08-06
+  workshop: true
+-
+  title: "OER: What, Why, When and How"
+  host: Taylor Institute for Teaching and Learning
+  place: Calgary
+  date: 2018-03-07
+  local: true
 -
   title: The Origins of Modern First-order Logic
   place: Carnegie Mellon University
@@ -900,6 +917,16 @@ teaching:
   school: University of Calgary
   courses:
   -
+    title: "Logic III: Gödel's Incompleteness Theorems"
+    number: Phil 479/679.01
+    date: Winter 2004, Winter 2007, Fall 2008, Winter 2010, Winter 2012, Winter 2017, Fall 2018
+    type: grad
+  -
+    title: "How Do We Know?"
+    number: Phil 274
+    date: Fall 2018
+    type: undergrad
+  -
     title: "Advanced Topics in Logic: Modal Logic"
     number: Phil 579.02/679.02
     date: Winter 2014, Winter 2018
@@ -908,11 +935,6 @@ teaching:
     title: Graduate Proseminar
     number: Phil 603
     date: Fall 2015, Fall 2016, Fall 2017
-    type: grad
-  -
-    title: "Logic III: Gödel's Incompleteness Theorems"
-    number: Phil 479/679.01
-    date: Winter 2004, Winter 2007, Fall 2008, Winter 2010, Winter 2012, Winter 2017
     type: grad
   -
     title: Logic II
@@ -1040,6 +1062,11 @@ students:
 -
   type: Supervisor
   students:
+    -
+      name: Aaron Thomas-Bolduc
+      degree: PhD
+      thesis: New Directions for Neologicism
+      date: 2018
     -
       name: Samara Burns
       degree: MA
@@ -1260,38 +1287,38 @@ service:
   type: "University of Calgary"
   gigs:
     -
+      item: Pacific Institute for the Mathematical Sciences, Calgary Site Steering Committee
+      date: 2016--
+    -
+      item: Calgary Mathematics and Philosophy Lecture Series, Department of Philosophy and Pacific Institute for the Mathematical Sciences, Organizer
+      date: 2015--
+    -
+      item: Institute for Quantum Science and Technology, Council
+      date: 2010--
+    -
+      item: Calgary Peripatetic Research Group on Logic and Category Theory, Co-organizer
+      date: 2001--
+    -
+      item: Faculty of Graduate Studies, Awards Oversight Committee
+      date: 2016--2018
+    -
+      item: Calgary Institute for the Humanities, Executive Council
+      date: 2016--2018
+    -
       item: Faculty of Arts, Graduate Academic Review Committee, Vice Chair
       date: 2015--2018
     -
       item: Faculty of Arts, Faculty Merit Committee
       date: 2017
     -
-      item: Faculty of Graduate Studies, Awards Oversight Committee
-      date: 2016-2018
+      item: VP Teaching and Learning, Open Educational Resources Working Group
+      date: 2016--2018
+    -
+      item: Taylor Institute for Teaching and Learning, Advisory Board to the Academic Director
+      date: 2016--2017
     -
       item: "Faculty of Arts, Tenure and Promotion Committee, Dean's Appointee"
       date: 2016
-    -
-      item: Pacific Institute for the Mathematical Sciences, Calgary Site Steering Committee
-      date: 2016-
-    -
-      item: Taylor Institute for Teaching and Learning, Advisory Board to the Academic Director
-      date: 2016-
-    -
-      item: VP Teaching and Learning, Open Educational Resources Working Group
-      date: 2016--
-    -
-      item: Calgary Mathematics and Philosophy Lecture Series, Department of Philosophy and Pacific Institute for the Mathematical Sciences, Organizer
-      date: 2015--
-    -
-      item: Calgary Institute for the Humanities, Executive Council
-      date: 2016--2018
-    -
-      item: Institute for Quantum Science and Technology, Council
-      date: 2010-
-    -
-      item: Calgary Peripatetic Research Group on Logic and Category Theory, Co-organizer
-      date: 2001-
     -
       item: Faculty of Arts, Executive Committee
       date: 2011-2013
@@ -1332,11 +1359,14 @@ service:
       item: Logic and Methodology of Science Graduate Student Association, Graduate Assembly Delegate
       date: 1995-1998
     -
-      item: Academic Senate, Advisory Committee to the on International Education, Student Representative
+      item: Academic Senate, Advisory Committee on International Education, Student Representative
       date: 1995-1996
 -
   type: Professional Organizations
   gigs:
+    -
+      item: Canadian Society for History and Philosophy of Mathematics, Council Member
+      date: 2018--
     -
       item: Association for Symbolic Logic, Membership Committee, Member
       date: 2016--
@@ -1347,11 +1377,11 @@ service:
       item: Special Interest Group on Logic and Computation of the ACM, Education Committee, Member
       date: 2014--
     -
-      item: Association for Symbolic Logic, Website Committee, Member
-      date: 2014--
-    -
       item: Kurt Gödel Society, Executive Board, Member
       date: 1992--94, 2005--
+    -
+      item: Association for Symbolic Logic, Website Committee, Member
+      date: 2014--2018
     -
       item: Association for Symbolic Logic, Nominating Committee, Member
       date: 2015--2016
@@ -1379,7 +1409,9 @@ service:
 -
   type: Conferences
   gigs:
-    - item: Western Canadian Philosophical Association, Organizer
+    - item: Indian Conference on Logic an its Applications ICLA 2019, Program Committee Member
+      date: 2019
+    - item: Western Canadian Philosophical Association WCPA, University of Calgary, Organizer
       date: 2018
     -
       item: Second-Order Quantifier Elimination SOQE 2017, ESSLLI, Program Committee Member
@@ -1388,19 +1420,20 @@ service:
       item: Quantifiers and Determiners QUAD 2017, ESSLLI, Program Committee Member
       date: 2017
     -
-      item: Annual Meeting of the Society for the History of Analytic Philosophy, University of Calgary, Organizer
+      item: Annual Meeting of the Society for the History of Analytic Philosophy SSHAP, University of Calgary, Organizer
       date: 2017
     -
       item: Spring Meeting of the Association for Symbolic Logic, Seattle, Program Committee Chair
       date: 2017
     -
-      item: Annual Meeting of the Canadian Society for History and Philosophy of Mathematics, University of Calgary, Local Organizer
+      item: Annual Meeting of the Canadian Society for History and Philosophy of Mathematics CSHPM, University of Calgary, Local Organizer
       date: 2016
     -
       item: Annual Meeting of the Association for Symbolic Logic, University of Connecticut, Special Session Organizer
       date: 2016
     -
       item: Summer Program for Diversity in Logic, University of Massachussetts, Dartmouth, Advisory Board Member
+      year: 2016
     -
       item: "Epsilon 2015: Hilbert's Epsilon and Tau in Logic, Informatics and Linguistics, Program Committee Member"
       date: 2015
@@ -1466,13 +1499,18 @@ service:
     -
       item: "Presses: Blackwell, Cambridge University Press, Oxford University Press, Princeton University Press, Springer"
     -
-      item: "Journals: \\emph{Archive for  Mathematical Logic}, \\emph{American Philosophical Quarterly}, \\emph{Bulletin of Symbolic Logic}, \\emph{Dialectica}, \\emph{Ergo}, \\emph{Erkenntnis}, \\emph{European Journal for Philosophy of Science}, \\emph{Historia Mathematica}, \\emph{History and Philosophy of Logic}, \\emph{Journal of Philosophical Logic}, \\emph{Journal of Symbolic Logic}, \\emph{Journal of Applied Non-Classical Logics}, \\emph{Journal of Logic and Computation}, \\emph{Journal of Logic, Language, and Information}, \\emph{Logic Journal of the IGPL}, \\emph{Logic and Logical Philosophy}, \\emph{Journal for the History of Analytic Philosophy}, \\emph{Mathematical Logic Quarterly}, \\emph{Mind}, \\emph{Notre Dame Journal of Formal Logic}, \\emph{Philosopher's Imprint}, \\emph{Philosophia Mathematica}, \\emph{Philosophical Transactions of the Royal Society A}, \\emph{Review of Symbolic Logic}, \\emph{Studia Logica}, \\emph{Studies in History and Philosophy of Science}, \\emph{Synthese}, \\emph{Theoretical Computer Science}"
+      item: "Journals: \\emph{Archive for  Mathematical Logic}, \\emph{American Philosophical Quarterly}, \\emph{Bulletin of Symbolic Logic}, \\emph{Dialectica}, \\emph{Ergo}, \\emph{Erkenntnis}, \\emph{European Journal for Philosophy of Science}, \\emph{Historia Mathematica}, \\emph{History and Philosophy of Logic}, \\emph{Journal of Applied Logic}, \\emph{Journal of Philosophical Logic}, \\emph{Journal of Symbolic Logic}, \\emph{Journal of Applied Non-Classical Logics}, \\emph{Journal of Humanistic Mathematics}, \\emph{Journal of Logic and Computation}, \\emph{Journal of Logic, Language, and Information}, \\emph{Logic Journal of the IGPL}, \\emph{Logic and Logical Philosophy}, \\emph{Journal for the History of Analytic Philosophy}, \\emph{Mathematical Logic Quarterly}, \\emph{Mind}, \\emph{Notre Dame Journal of Formal Logic}, \\emph{Philosopher's Imprint}, \\emph{Philosophia Mathematica}, \\emph{Philosophical Transactions of the Royal Society A}, \\emph{Review of Symbolic Logic}, \\emph{Studia Logica}, \\emph{Studies in History and Philosophy of Science}, \\emph{Synthese}, \\emph{Theoretical Computer Science}"
     -
-      item: "Conferences: Canadian Philosophical Association 2003, 2006, 2008, 2017; Workshops on Computer Science Logic 1994, 1995, 2002, 2017; Western Canadian Philosophy Association 2002, 2004, 2016;  Computability in Europe 2008; Logic for Programming and Automated Reasoning 1992, 2005, 2007; World Congress on Universal Logic 2005; Society for Exact Philosophy 2005; International Joint Conference on Automated Reasoning 2004; International Symposia on Multiple Valued Logic 1994, 1998; Kurt Gödel Colloquia 1993, 1997; International Conference on Automated Deduction 1994, 2004; European Conference on Artificial Intelligence 1994; Workshop on Tableau-based Deduction, 1993"
+      item: "Conferences: Indian Conference on Logic and its Applications 2019; Logica 2018; Western Canadian Philosophy Association 2002, 2004, 2016, 2018; Canadian Philosophical Association 2003, 2006, 2008, 2017; Workshops on Computer Science Logic 1994, 1995, 2002, 2017; Logic in Computer Science 2015; Computability in Europe 2008; Logic for Programming and Automated Reasoning 1992, 2005, 2007; World Congress on Universal Logic 2005; Society for Exact Philosophy 2005; International Joint Conference on Automated Reasoning 2004; International Symposia on Multiple Valued Logic 1994, 1998; Kurt Gödel Colloquia 1993, 1997; International Conference on Automated Deduction 1994, 2004; European Conference on Artificial Intelligence 1994; Workshop on Tableau-based Deduction, 1993"
     -
-      item: "Granting Agencies: Austrian Science Fund, Fonds Québéquois de Recherche sur la Société et Culture, Natural Sciences and Engineering Research Council of Canada NSERC, Research Foundation Flanders, Social Sciences and Humanities Research Council of Canada SSHRC, Deutsche Forschungsgemeinschaft, Canada Council for the Arts, Nederlands Organization for Scientific Research"
+      item: "Granting Agencies: Austrian Science Fund, Fonds Québéquois de Recherche sur la Société et Culture, Natural Sciences and Engineering Research Council of Canada NSERC, Research Foundation Flanders, Social Sciences and Humanities Research Council of Canada SSHRC, Deutsche Forschungsgemeinschaft, Canada Council for the Arts, Israel Science Foundation, Nederlands Organization for Scientific Research, Swiss National Science Foundation"
 
 grants:
+- type: Teaching Activity Grant, Faculty of Arts, University of Calgary
+  title: "How Do We Know?"
+  date: 2018
+  value: CAD 1,000
+  note: "Co-applicant: Megan Delehanty"
 -
   type:  Scholarship of Teaching and Learning Grant, University of Calgary
   title: Logic for the 21st Century
@@ -1564,6 +1602,7 @@ grants:
   type: Travel Grant, University of Calgary Research Grants Committee
   title: International Symposium on Multiple Valued Logic, Tokyo, May 2003
   value: CAD 1,500
+  date: 2003
 -
   type: Professional Development Grant, Faculty of Humanities
   date: 2003
@@ -1589,6 +1628,6 @@ grants:
 -
   type: Research Excellence Envelope Grant, University of Calgary
   date: 2001--2002
-  value: CAD 15,000.
+  value: CAD 15,000
 
 ...

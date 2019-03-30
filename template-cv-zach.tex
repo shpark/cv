@@ -87,12 +87,13 @@ $endfor$
   \printbibrz{abstract}{Abstracts}
   \printbibrz{thesis}{Theses}
   \printbibrz{techreport}{Reports}
+  \printbibrz{other}{Other}
 \end{publications}
 
 
 \section{Presentations}
 
-\subsection{Invited Talks}
+\subsection{Invited Departmental Presentations}
 
 $for(presentation)$
 $if(presentation.invited)$\ind ``$presentation.title$.'' $if(presentation.host)$$presentation.host$, $endif$$presentation.place$, \printdate{$presentation.date$}.
@@ -100,7 +101,7 @@ $if(presentation.invited)$\ind ``$presentation.title$.'' $if(presentation.host)$
 $endif$
 $endfor$
 
-\subsection{Keynotes}
+\subsection{Conference Keynotes}
 
 $for(presentation)$
 $if(presentation.keynote)$\ind ``$presentation.title$.'' $if(presentation.host)$\emph{$presentation.host$}, $endif$$presentation.place$, \printdate{$presentation.date$}.
@@ -108,7 +109,7 @@ $if(presentation.keynote)$\ind ``$presentation.title$.'' $if(presentation.host)$
 $endif$
 $endfor$
 
-\subsection{Invited Workshops}
+\subsection{Invited Conference and Workshop Talks}
 
 $for(presentation)$
 $if(presentation.workshop)$\ind ``$presentation.title$.'' $if(presentation.host)$\emph{$presentation.host$}, $endif$$presentation.place$, \printdate{$presentation.date$}.

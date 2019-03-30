@@ -204,25 +204,71 @@
 
 \usepackage[bibstyle=authoryear,sorting=ydnt,dashed=false,maxbibnames=99]{biblatex}
 
-\DeclareFieldFormat{url}{\url{#1}}
 \DeclareFieldFormat[article]{pages}{#1}
 \DeclareFieldFormat[inproceedings]{pages}{\lowercase{pp.}~#1}
 \DeclareFieldFormat[incollection]{pages}{\lowercase{pp.}~#1}
 \DeclareFieldFormat[article]{volume}{\mkbibbold{#1}}
 \DeclareFieldFormat[article]{number}{\mkbibparens{#1}}
-\DeclareFieldFormat{title}{\MakeCapital{#1}}
+\DeclareFieldFormat{title}{``\MakeCapital{#1}''}
 \DeclareFieldFormat[book]{title}{\textit{\MakeCapital{#1}}}
-\DeclareFieldFormat[online]{title}{\MakeCapital{#1}}
-\DeclareFieldFormat[article]{url}{}
+\DeclareFieldFormat[audio]{series}{\textit{\MakeCapital{#1}}}
+%\DeclareFieldFormat[article]{url}{}
 \DeclareFieldFormat{shorthandwidth}{#1}
 \DeclareFieldFormat{extrayear}{}
+
+\DeclareBibliographyDriver{audio}{%
+   \usebibmacro{bibindex}%
+   \usebibmacro{author}
+   \labelnamepunct
+   \newblock
+   \printfield{title}
+   \labelnamepunct
+   \newblock
+   \iffieldundef{series}{}{\printfield{series}%
+      \iffieldundef{number}{}{~\printfield{number}}}
+   \labelnamepunct
+   \newblock
+   \printlist{publisher}
+   \newblock\setunit{\addcomma\space}
+   \printfield{userd}
+   \labelnamepunct
+   \newblock
+   \printfield{note}
+   \labelnamepunct
+   \newblock
+   \printfield{url}
+   \usebibmacro{finentry}
+}
+
+\DeclareBibliographyDriver{software}{%
+   \usebibmacro{bibindex}%
+   \usebibmacro{author}
+   \labelnamepunct
+   \newblock
+   \printfield{title}
+   \labelnamepunct
+   \newblock
+   \iffieldundef{version}{}{\printfield{version}}
+   \labelnamepunct
+   \newblock
+   \printlist{publisher}
+   \newblock\setunit{\addcomma\space}
+   \printfield{userd}
+   \labelnamepunct
+   \newblock
+   \printfield{note}
+   \labelnamepunct
+   \newblock
+   \printfield{url}
+   \usebibmacro{finentry}
+}
 
 % Format & add link to philpapers page
 
 \DeclareFieldFormat{eprint:philpapers}{\textsc{philpapers:} \href{https://philpapers.org/rec/#1}{\footnotesize\texttt{#1}}}
 \DeclareFieldFormat{doi}{\textsc{doi:} 
 \href{https://doi.org/#1}{\footnotesize\texttt{#1}}}
-\DeclareFieldFormat{url}{\href{#1}{\footnotesize\texttt{#1}}}
+\DeclareFieldFormat{url}{\href{#1}{\textsc{link}}}
 % Format & add link to Google Scholar citations
 
 % map the bibtex field "google" to usera
@@ -251,7 +297,7 @@
 \def\defscholar#1#2{\expandafter\def\csname scholar#1\endcsname{#2}}
 \def\printscholar#1{\ifcsname scholar#1\endcsname%
   \href{https://scholar.google.com/scholar?cites=#1}%
-       {\textsc{\csname scholar#1\endcsname~citations}}\fi}
+       {\textsc{citations:~\csname scholar#1\endcsname}}\fi}
 
 % include citation counts if available
 \IfFileExists{\jobname-scholar.tex}{\input \jobname-scholar}
