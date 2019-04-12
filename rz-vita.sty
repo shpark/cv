@@ -202,19 +202,26 @@
 %\usepackage[uniquename=init,dashed=false,doi=false,isbn=false,backend=biber]{biblatex-chicago}
 %\usepackage[notes,natbib,isbn=false,backend=biber,url=false,numbermonth=true]{biblatex-chicago}  
 
-\usepackage[bibstyle=authoryear,sorting=ydnt,dashed=false,maxbibnames=99]{biblatex}
+\usepackage[bibstyle=authoryear,date=year,sorting=ydnt,dashed=false,maxbibnames=99]{biblatex}
 
 \DeclareFieldFormat[article]{pages}{#1}
 \DeclareFieldFormat[inproceedings]{pages}{\lowercase{pp.}~#1}
 \DeclareFieldFormat[incollection]{pages}{\lowercase{pp.}~#1}
 \DeclareFieldFormat[article]{volume}{\mkbibbold{#1}}
 \DeclareFieldFormat[article]{number}{\mkbibparens{#1}}
-\DeclareFieldFormat{title}{``\MakeCapital{#1}''}
+%\DeclareFieldFormat{title}{``\MakeSentenceCase{#1}''}
 \DeclareFieldFormat[book]{title}{\textit{\MakeCapital{#1}}}
 \DeclareFieldFormat[audio]{series}{\textit{\MakeCapital{#1}}}
-%\DeclareFieldFormat[article]{url}{}
 \DeclareFieldFormat{shorthandwidth}{#1}
 \DeclareFieldFormat{extrayear}{}
+\DeclareFieldFormat[article]{language}{}
+\DeclareFieldFormat[article]{month}{\textbf{#1}}
+\DeclareFieldFormat{isbn}{}
+\DeclareFieldFormat{issn}{}
+
+\AtEveryBibitem{%
+  \clearlist{language}%
+}
 
 \DeclareBibliographyDriver{audio}{%
    \usebibmacro{bibindex}%
@@ -269,9 +276,10 @@
 \DeclareFieldFormat{doi}{\textsc{doi:} 
 \href{https://doi.org/#1}{\footnotesize\texttt{#1}}}
 \DeclareFieldFormat{url}{\href{#1}{\textsc{link}}}
+
 % Format & add link to Google Scholar citations
 
-% map the bibtex field "google" to usera
+% map the bibtex field "scholar" to usera
 \DeclareSourcemap{
     \maps[datatype=bibtex]{
       \map{

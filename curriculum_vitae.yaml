@@ -1064,23 +1064,30 @@ students:
   students:
     -
       name: Aaron Thomas-Bolduc
+      webpage: https://hcommons.org/members/arthomasbolduc/
       degree: PhD
       thesis: New Directions for Neologicism
+      link: https://prism.ucalgary.ca/handle/1880/107131
       date: 2018
     -
       name: Samara Burns
+      webpage: https://phil.ucalgary.ca/profiles/samara-burns
       degree: MA
       thesis: Hypersequent Calculi for Modal Logics
+      link: https://prism.ucalgary.ca/handle/1880/106539
       date: 2018
     -
       name: Teppei Hayashi
       degree: PhD
       thesis: "The Continuum: History, Mathematics, and Philosophy"
+      link: https://prism.ucalgary.ca/handle/1880/106283
       date: 2017
     -
       name: Zahra Ahmadianhosseini
+      webpage: http://logic.berkeley.edu/students.html
       degree: MA
       thesis: Logical Models of Fallible Knowledge
+      link: https://prism.ucalgary.ca/handle/11023/3942
       date: 2017
     -
       name: Zezen Qian
@@ -1089,48 +1096,64 @@ students:
       date: 2016
     -
       name: Andre Curtis-Trudel
+      webpage: https://philosophy.osu.edu/people/curtistrudel.1
       degree: BA Honours
       thesis: Explication, Open-Texture, and Church's Thesis
+      link: http://dspace.ucalgary.ca/handle/1880/51499
       date: 2016
     -
       name: Eamon Darnell
+      webpage: https://philosophy.utoronto.ca/directory/eamon-michael-darnell/
       degree: BA Honours
       thesis: Gödel vs. Mechanism
+      link: http://dspace.ucalgary.ca/handle/1880/50993
       date: 2013
     -
       name: Gillman Payette
+      webpage: https://uleth.academia.edu/GillmanPayette
       degree: PhD
       thesis: A Study in the Logic of Institutions
+      link: http://hdl.handle.net/11023/115
       date: 2012
     -
-      name: Teresa Kouri
+      name: Teresa Kouri Kissel
+      webpage: https://sites.google.com/site/teresakouri/
       degree: MA
       thesis: Indiscernibility and Mathematical Structuralism
+      link: http://dspace.ucalgary.ca/handle/1880/47829
       date: 2010
     -
       name: Taylor Scobbie
+      webpage: https://www.linkedin.com/in/taylor-scobbie-42aa70bb
       degree: BA Honours
       thesis: "Contrast and Contrastivism: The Logic of Contrastive Knowledge"
+      link: http://dspace.ucalgary.ca/handle/1880/51000
       date: 2010
     -
       name: Steve Coyne
+      webpage: http://www.stevecoyne.ca/
       degree: BA Honours
       thesis: Belief-Theoretic Foundations for Conversation
       date: 2009
     -
       name: Rafał Urbaniak
+      webpage: https://ugent.academia.edu/RafalUrbaniak
       degree: PhD
       thesis: Leśniewski's Systems of Logic and Mereology
+      link: http://dspace.ucalgary.ca/handle/1880/46697
       date: 2008
     -
       name: Julianne Chung
+      webpage: https://louisville.edu/philosophy/People/faculty-profile-pages/julianne-chung
       degree: BA Honours
       thesis: The Paradox of Knowability
+      link: http://dspace.ucalgary.ca/handle/1880/46819
       date: 2007
     -
       name: Phil Serchuk
       degree: BA Honours
       thesis: Fuzzy Logic and Vagueness
+      link: http://dspace.ucalgary.ca/handle/1880/46689
       date: 2006
 -
   type: "External Examiner"

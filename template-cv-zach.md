@@ -76,7 +76,7 @@ $endfor$
 $for(students)$
 ### $students.type$
 $for(students.students)$
-$students.students.name$ ($students.students.degree$), $students.students.thesis$, $students.students.date$
+$if(students.students.webpage)$[$students.students.name$]($students.students.webpage$)$else$$students.students.name$$endif$ ($students.students.degree$), "$if(students.students.link)$[$students.students.thesis$]($students.students.link$)$else$$students.students.thesis$$endif$," $students.students.date$
 
 $endfor$
 $endfor$

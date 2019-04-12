@@ -159,7 +159,7 @@ $endfor$
 $for(students)$
 \subsection{$students.type$}
 $for(students.students)$
-\ind $students.students.name$ ($students.students.degree$), $students.students.thesis$, $students.students.date$.
+\ind $if(students.students.webpage)$\href{$students.students.webpage$}{$students.students.name$}$else$$students.students.name$$endif$ ($students.students.degree$), ``$if(students.students.link)$\href{$students.students.link$}{$students.students.thesis$}$else$$students.students.thesis$$endif$,'' $students.students.date$
 
 $endfor$
 $endfor$
