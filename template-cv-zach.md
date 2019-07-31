@@ -1,7 +1,11 @@
+---
+citation-style: publication-list.csl
+nocite: |
+  @*
+...
 
 
 # $name$
-
 
 $for(address)$
 >  $address$  
@@ -36,7 +40,7 @@ $endif$
 $endfor$
 
 $for(competencies)$
-##$competencies.type$
+## $competencies.type$
 $for(competencies.items)$$competencies.items$
 
 $endfor$
@@ -98,6 +102,11 @@ $service.gigs.item$. $if(service.gigs.date)$$service.gigs.date$.$endif$
 $endfor$
 $endfor$
 
+## Publications
+
+::: {#refs}
+:::
+
 ## Invited Talks
 
 $for(presentation)$
@@ -140,4 +149,3 @@ $if(presentation.local)$$presentation.title$. $if(presentation.host)$_$presentat
 $endif$
 
 $endfor$
-

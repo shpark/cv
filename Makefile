@@ -25,7 +25,7 @@ yaml-cv.md: curriculum_vitae.yaml
 
 %-scholar.tex: FORCE_MAKE
 	rm -f $@
-	for cids in `grep 'scholar' zach.bib|sed 's/^[^0-9]*//;s/[^0-9]*$$//'` ; do \
+	for cids in `grep 'scholar =' zach.bib|sed 's/^[^0-9]*//;s/[^0-9]*$$//'` ; do \
 	 	sleep 8m ;\
 		cidss=`echo $$cids | sed 's/,/ /g'` ;\
 		cites=`./citecount $$cidss` ;\
@@ -34,8 +34,8 @@ yaml-cv.md: curriculum_vitae.yaml
 			echo "\defscholar{$$cids}{$$cites}" >> $@ ;\
 		fi ;\
 	done
-%.md: template-%.md yaml-cv.md
-	sed 's/-[0-9][0-9]-[0-9][0-9]//g;s/\\\\emph{\([^}]*\)}/_\1_/g;' yaml-cv.md | pandoc --template=$< -t markdown | sed 's/--/–/g' > $@
+%.md: template-%.md yaml-cv.md zach.bib
+	sed 's/-[0-9][0-9]-[0-9][0-9]//g;s/\\\\emph{\([^}]*\)}/_\1_/g;' yaml-cv.md | pandoc --filter pandoc-citeproc --bibliography=zach.bib --template=$< -t markdown | pandoc --filter pandoc-citeproc --bibliography=zach.bib  -t markdown > $@
 
 %.html: %.md
 	pandoc -f markdown -t html $< > $@
