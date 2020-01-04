@@ -39,7 +39,7 @@ appointment:
         begindate: 2014-10-01
         enddate: 2015-06-30
   -
-    place: University of California, Irvine, Department of Philosophy
+    place: University of California, Irvine, Department of Logic and Philosophy of Science
     items:
       -
         item: Visiting Associate Researcher
@@ -75,6 +75,16 @@ appointment:
 
 editor:
   -
+    item: Ergo
+    link: https://www.ergophiljournal.org/
+    role: Area Editor
+    begindate: 2010-00-00
+  -
+    item: Philosophia Mathematica
+    link: https://academic.oup.com/philmat
+    role: Editor
+    begindate: 2019-00-00
+  -
     item: Journal for the History of Analytic Philosophy
     link: https://jhaponline.org/
     role: Founding Editor
@@ -109,15 +119,12 @@ editor:
     link: http://www.phil.cmu.edu/projects/bernays/
     role: Editorial Board Member
     begindate: 2000-00-00
-    
   -
     item: The Review of Symbolic Logic
     link: https://www.cambridge.org/core/journals/review-of-symbolic-logic
     role: Founding Editor
     begindate: 2007-01-01
     enddate: 2013-12-31
- 
-    
 
 education:
   -
@@ -939,12 +946,12 @@ teaching:
   -
     title: Logic II
     number: Phil 379
-    date: Winter 2003, Fall 2003, Winter 2016, Fall 2016
+    date: Winter 2003, Fall 2003, Winter 2016, Fall 2016, Fall 2019
     type: undergrad
   -
     title: Logic I
     number: Phil 279
-    date: Fall 2001, Winter 2002, Fall 2002, Winter 2004, Winter 2006, Winter 2009, Fall 2009, Fall 2010, Fall 2011, Fall 2012, Fall 2013
+    date: Fall 2001, Winter 2002, Fall 2002, Winter 2004, Winter 2006, Winter 2009, Fall 2009, Fall 2010, Fall 2011, Fall 2012, Fall 2013, Fall 2019
     type: undergrad
   -
     title: "Advanced Topics in Logic: Proof Theory"
@@ -1063,6 +1070,13 @@ students:
   type: Supervisor
   students:
     -
+      name: Joseph McDonald
+      webpage: http://www.illc.uva.nl/People/show_person/?Person_id=McDonald%20J.S.
+      degree: MA
+      thesis: A Categorical Extension of the Curry-Howard Isomorphism
+      link: https://prism.ucalgary.ca/handle/1880/111014
+      date: 2019
+    -
       name: Aaron Thomas-Bolduc
       webpage: https://hcommons.org/members/arthomasbolduc/
       degree: PhD
@@ -1071,7 +1085,7 @@ students:
       date: 2018
     -
       name: Samara Burns
-      webpage: https://phil.ucalgary.ca/profiles/samara-burns
+      webpage: https://philosophy.columbia.edu/directories/student/samara-burns
       degree: MA
       thesis: Hypersequent Calculi for Modal Logics
       link: https://prism.ucalgary.ca/handle/1880/106539
@@ -1137,7 +1151,7 @@ students:
       date: 2009
     -
       name: Rafał Urbaniak
-      webpage: https://ugent.academia.edu/RafalUrbaniak
+      webpage: https://ug.academia.edu/Rafa%C5%82Urbaniak
       degree: PhD
       thesis: Leśniewski's Systems of Logic and Mereology
       link: http://dspace.ucalgary.ca/handle/1880/46697
@@ -1249,6 +1263,9 @@ service:
 -
   type: "Department of Philosophy, University of Calgary"
   gigs:
+    -
+      item: Undergraduate Program Committee, Member
+      date: 2019-
     -
       item: Graduate Program Director
       date: 2015-2018
@@ -1388,20 +1405,23 @@ service:
   type: Professional Organizations
   gigs:
     -
+      item: Philosophy of Mathematics Association, President
+      date: 2015--2016
+    -
       item: Canadian Society for History and Philosophy of Mathematics, Council Member
       date: 2018--
     -
       item: Association for Symbolic Logic, Membership Committee, Member
       date: 2016--
     -
-      item: Society for the Study of the History of Analytic Philosophy, Secretary
-      date: 2015--
-    -
       item: Special Interest Group on Logic and Computation of the ACM, Education Committee, Member
       date: 2014--
     -
       item: Kurt Gödel Society, Executive Board, Member
       date: 1992--94, 2005--
+    -
+      item: Society for the Study of the History of Analytic Philosophy, Secretary
+      date: 2015--2019
     -
       item: Association for Symbolic Logic, Website Committee, Member
       date: 2014--2018
