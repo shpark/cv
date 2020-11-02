@@ -1,6 +1,6 @@
 .PHONY: FORCE_MAKE
 
-all: cv-zach.pdf
+all: cv-shpark.pdf
 
 #pdf:   clean $(PDFS)
 #html:  clean $(HTML)
@@ -8,16 +8,16 @@ all: cv-zach.pdf
 %.pdf: %.tex FORCE_MAKE
 	latexmk -dvi- -pdf $*
 
-yaml-cv.md: curriculum_vitae.yaml
+%.md: %.yaml
 # Pandoc can't actually read YAML, just YAML blocks in
 # Markdown. So I give it a document that's just a YAML block,
 # while still editing a straight YAML file which has a bunch of advantages.
 	cat $< > $@
 
-%.tex: template-%.tex yaml-cv.md
+%.tex: template-%.tex %.md
 # Pandoc does the initial compilation to tex; we then latex handle the
 # actual bibliography and pdf creation.
-	pandoc --template=$< -t latex yaml-cv.md > $@
+	pandoc --template=$< -t latex cv-shpark.md -o $@
 # Citekeys get screwed up by pandoc which escapes the underscores.
 # Years should have en-dashes, which damned if I'm going to do it
 # on my own.
