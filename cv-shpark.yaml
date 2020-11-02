@@ -127,27 +127,16 @@ bibliography: shpark.bib
 
 education:
   -
-    school: University of California, Berkeley
-    degree: PhD
-    field: Logic and the Methodology of Science
-    date: 2001-05-01
-    info: "Thesis: \"Hilberts Finitism: Historical, Philosophical, and Metamathematical Perspectives.\" Supervisors: Paolo Mancosu, Jack H. Silver"
+    school: Seoul National University
+    degree: M.S.
+    field: Electrical and Computer Engineering
+    date: 2021-09-01
+    info: "Expected"
   -
-    school: University of California, Berkeley
-    degree: MA
-    field: Mathematics
-    date: 1997-05-01
-  -
-    school: University of California, Berkeley
-    degree: CPhil
-    field: Logic and the Methodology of Science
-    date: 1997-05-01
-  -
-    school: Technische Universität Wien
-    degree: Diplom-Ingenieur
-    field: Computational Logic
-    date: 1993-11-01
-
+    school: Seoul National University
+    degree: B.S.
+    field: Electrical and Computer Engineering
+    date: 2019-09-01
 
 # competencies:
 #   -
