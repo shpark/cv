@@ -15,6 +15,19 @@ www: https://shpark.github.io
 github: shpark
 bibliography: shpark.bib
 
+education:
+  -
+    school: Seoul National University
+    degree: M.S.
+    field: Electrical and Computer Engineering
+    date: 2021-09-01
+    info: "Expected"
+  -
+    school: Seoul National University
+    degree: B.S.
+    field: Electrical and Computer Engineering
+    date: 2019-09-01
+
 # appointment:
 #   -
 #     place: University of Calgary, Department of Philosophy
@@ -124,19 +137,6 @@ bibliography: shpark.bib
 #     role: Founding Editor
 #     begindate: 2007-01-01
 #     enddate: 2013-12-31
-
-education:
-  -
-    school: Seoul National University
-    degree: M.S.
-    field: Electrical and Computer Engineering
-    date: 2021-09-01
-    info: "Expected"
-  -
-    school: Seoul National University
-    degree: B.S.
-    field: Electrical and Computer Engineering
-    date: 2019-09-01
 
 # competencies:
 #   -
